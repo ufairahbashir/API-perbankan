@@ -1,0 +1,62 @@
+/* Reset margin dan padding */
+body, h1, h2, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    padding: 20px;
+}
+
+/* Style header */
+h1 {
+    background-color: #009688; /* Warna latar belakang header */
+    color: #fff; /* Warna teks header */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style form */
+form {
+    background-color: #fff; /* Warna latar belakang form */
+    border: 1px solid #ccc; /* Garis tepi form */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Style label dan input */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #009688; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style link jika diperlukan */
+a {
+    color: #009688; /* Warna teks link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

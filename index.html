@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplikasi Perbankan</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Aplikasi Perbankan</h1>
+
+    <!-- Form untuk menampilkan saldo -->
+    <h2>Saldo</h2>
+    <form action="api.php" method="GET">
+        <input type="hidden" name="action" value="getSaldo">
+        <label for="accountNumber">Nomor Akun:</label>
+        <input type="text" name="accountNumber" id="accountNumber" required>
+        <input type="submit" value="Tampilkan Saldo">
+    </form>
+
+    <!-- Form untuk transfer uang -->
+    <h2>Transfer Uang</h2>
+    <form action="api.php" method="POST">
+        <input type="hidden" name="action" value="transferUang">
+        <label for="fromAccount">Dari Akun:</label>
+        <input type="text" name="fromAccount" id="fromAccount" required><br>
+        <label for="toAccount">Ke Akun:</label>
+        <input type="text" name="toAccount" id="toAccount" required><br>
+        <label for="transferAmount">Jumlah Uang:</label>
+        <input type="text" name="transferAmount" id="transferAmount" required><br>
+        <input type="submit" value="Transfer Uang">
+    </form>
+
+    <!-- Form untuk mengecek transaksi -->
+    <h2>Cek Transaksi</h2>
+    <form action="api.php" method="GET">
+        <input type="hidden" name="action" value="cekTransaksi">
+        <label for="accountNumberTransaksi">Nomor Akun:</label>
+        <input type="text" name="accountNumberTransaksi" id="accountNumberTransaksi" required>
+        <input type="submit" value="Cek Transaksi">
+    </form>
+</body>
+</html>
